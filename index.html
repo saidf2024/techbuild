@@ -366,6 +366,27 @@ nav ul {
   margin-left: auto;
 }
 
+.qr-hero {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qr-hero img {
+  width: 150px;
+  height: 150px;
+  border: 5px solid white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  transition: transform 0.3s;
+}
+
+.qr-hero img:hover {
+  transform: scale(1.05);
+}
+
+
 
 
     @media (max-width: 768px) 
@@ -462,6 +483,10 @@ nav ul li a:hover {
     <div class="container">
       <h1>Industrial Automation Experts</h1>
       <p>Precision-engineered solutions for machine controls and servo systems.</p>
+       <div class="qr-hero">
+      <img src="qr-code-vcard.png" alt="Scan My Contact QR Code">
+      <p style="margin-top: 10px;">Scan to save our contact</p>
+    </div>
     </div>
   </section>
 
@@ -566,9 +591,9 @@ nav ul li a:hover {
         <div>
           <i class="fas fa-map-marker-alt"></i>
           <h3>Location</h3>
-          <p>Shmeisani Amman Jordan</p>
+          <p>Shmesani Amman Jordan</p>
         </div>
-        <div>
+               <div>
           <i class="fas fa-phone"></i>
           <h3>Phone</h3>
           <p>+962 79 936 3026</p>
@@ -587,6 +612,7 @@ nav ul li a:hover {
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col">
+          
           <h3>TechBuild Engineering</h3>
           <p>Specializing in industrial automation since 2015.</p>
         </div>
@@ -604,6 +630,10 @@ nav ul li a:hover {
           <p><i class="fas fa-clock"></i> Sun-Thu: 9AM - 5PM</p>
           <p><i class="fas fa-clock"></i> Fri-Sat: Closed</p>
         </div>
+         <div class="qr-hero">
+      <img src="qr-code-vcard.png" alt="Scan My Contact QR Code">
+      <p style="margin-top: 10px;">Scan to save our contact</p>
+    </div>
       </div>
       <div class="copyright">
         <p>&copy; 2025 TechBuild Engineering. All Rights Reserved.</p>
