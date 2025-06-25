@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords" content="industrial automation, PLC programming, servo drives, robotics, HMI systems">
+  <meta name="keywords" content="industrial automation, Jordan, Amman, PLC programming, servo drives, robotics, HMI systems">
   <meta name="description" content="TechBuild Engineering offers cutting-edge industrial automation solutions including PLC programming, robotics integration, and servo control systems.">
 
 <meta property="og:title" content="TechBuild Engineering | Industrial Automation Experts" />
@@ -28,7 +28,7 @@
     }
 
     html {
-      scroll-padding-top: -150px;
+
       scroll-behavior: smooth;
     }
 
@@ -55,19 +55,7 @@
   animation: spin 1s linear infinite;
 }
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-    section::before {
-      content: '';
-      display: block;
-      height: 100px;
-      margin-top: -120px;
-      visibility: hidden;
-    }
-
+  
     body {
       line-height: 1.6;
       color: var(--secondary);
@@ -134,7 +122,7 @@ header .container {
     .logo {
       font-size: 30px;
       font-weight: bold;
-      color: var(--primary);
+      color: rgba(255, 255, 255, 0.4);
       text-decoration: none;
     }
 
@@ -173,15 +161,14 @@ nav ul li a.active {
   padding: 20px 15px;
   transition: color 0.3s;
   user-select: none;
+  margin-left: 10px;
 }
 
 #lang-toggle:hover {
   color: var(--accent);
 }
 
-nav #lang-toggle {
-  margin-left: 10px;
-}
+
     .menu-toggle {
       display: none;
       cursor: pointer;
@@ -452,6 +439,18 @@ nav ul li a:hover {
         font-size: 2.2rem;
       }
     }
+
+    .fade-in-card {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
   </style>
 </head>
 
@@ -472,7 +471,7 @@ nav ul li a:hover {
         <li><a href="#contact">Contact</a></li>
       </ul>
       
-  <button id="lang-toggle" aria-label="Toggle Language">English</button>
+  <button id="lang-toggle" aria-label="Toggle Language">العربية</button>
       <div class="menu-toggle"><i class="fas fa-bars"></i></div>
     </nav>
   </div>
@@ -491,37 +490,37 @@ nav ul li a:hover {
   </section>
 
   <!-- Services Section -->
-  <section class="services" id="services">
+  <section class="services" id="services" >
     <div class="container">
       <h2>Our Services</h2>
       <div class="services-grid">
-        <div class="service">
+        <div class="service fade-in-card">
           <i class="fas fa-microchip"></i>
           <h3>Machine Controls</h3>
           <p>Custom PLC programming and control system design for industrial machinery.</p>
         </div>
-        <div class="service">
+        <div class="service fade-in-card">
           <i class="fas fa-cogs"></i>
           <h3>Servo Drive Systems</h3>
           <p>High-performance servo motion control solutions.</p>
         </div>
-        <div class="service">
+        <div class="service fade-in-card">
           <i class="fas fa-server"></i>
           <h3>Electrical CAD Design</h3>
           <p>UL-compliant panel sizing, layout, and wiring.</p>
         </div>
-        <div class="service">
+        <div class="service fade-in-card">
           <i class="fas fa-desktop"></i>
           <h3>HMI & Remote Monitoring</h3>
           <p>Intuitive interfaces with real-time data tracking.</p>
         </div>
         
-        <div class="service">
+        <div class="service fade-in-card">
           <i class="fas fa-gear"></i>
           <h3>CNC Controls</h3>
           <p>CNC unit design and integration</p>
         </div>
-        <div class="service">
+        <div class="service fade-in-card">
           <i class="fas fa-robot"></i>
           <h3>Robotics</h3>
           <p>Integration of robotic arms and vision systems for advanced automation.</p>
@@ -537,42 +536,42 @@ nav ul li a:hover {
     <div class="container">
       <h2>Our Projects</h2>
       <div class="gallery-grid">
-        <div class="gallery-item">
+        <div class="gallery-item fade-in-card">
           <img src="daimler.jpg" alt="Control Panel" />
           <div class="overlay">
             <h3>Daimler Freightliner Trucks Ecoat</h3>
             <p>Ecoat System</p>
           </div>
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item fade-in-card">
           <img src="midea-group422.jpg" alt="Servo Motors" />
           <div class="overlay">
             <h3>Midea China</h3>
             <p>Powder coating, furnace and oven systems</p>
           </div>
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item fade-in-card">
           <img src="littell.jpg" alt="HMI Screen" />
           <div class="overlay">
             <h3>Littell Inc.</h3>
             <p>Sheeting systems</p>
           </div>
         </div>
-        <div class="gallery-item">
-          <img src="aosmith.jpg" alt="HMI Screen" />
+        <div class="gallery-item fade-in-card">
+          <img src="aosmith.jpg" alt="A. O. Smith Waterheater control panel"/>
           <div class="overlay">
             <h3>A. O. Smith Waterheater Plant</h3>
             <p>Conveyor, furnace and oven systems</p>
           </div>
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item fade-in-card">
           <img src="suncentre.jpg" alt="HMI Screen" />
           <div class="overlay">
             <h3>Suncentre USA Inc.</h3>
             <p>Pouch producing machines</p>
           </div>
         </div>
-        <div class="gallery-item">S
+        <div class="gallery-item fade-in-card">
           <img src="RADMAX_APP-Packaging.jpeg" alt="HMI Screen" />
           <div class="overlay">
             <h3>Prime UV Inc.</h3>
@@ -696,25 +695,20 @@ nav ul li a:hover {
       });
     });
 
-    // Section fade-in on scroll
-const sections = document.querySelectorAll('section');
 
-const observer = new IntersectionObserver((entries) => {
+const fadeElements = document.querySelectorAll('.fade-in-card, section');
+
+const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    } else {
-      entry.target.classList.remove('visible'); // fade out when exiting
-    }
+    entry.target.classList.toggle('visible', entry.isIntersecting);
   });
-}, {
-  threshold: 0.05,
+}, { threshold: 0.1 });
+
+fadeElements.forEach(el => {
+  el.classList.add('fade-in-section');
+  observer.observe(el);
 });
 
-document.querySelectorAll('section').forEach(section => {
-  section.classList.add('fade-in-section');
-  observer.observe(section);
-});
 
 const langToggleBtn = document.getElementById('lang-toggle');
 
@@ -742,6 +736,7 @@ langToggleBtn.addEventListener('click', () => {
     touchMultiplier: 3.8,
   });
 
+// Sync IntersectionObserver with Lenis scroll
   function raf(time) {
     lenis.raf(time);
     requestAnimationFrame(raf);
